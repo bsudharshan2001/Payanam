@@ -27,6 +27,25 @@
         .menu {
             display: none;
         }
+        span::before {
+        content: "பயணம்";
+        animation: animate infinite 3s;
+    }
+  
+    @keyframes animate {
+  
+        0% {
+            content: "பயணம்";
+        }
+  
+        50% {
+            content: "for";
+        }
+  
+        75% {
+            content: "Geeks";
+        }
+    }
     </style>
 </head>
 
