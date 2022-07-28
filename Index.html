@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Payanam</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="HomePage-Style.CSS" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@700&display=swap" rel="stylesheet" />
+    <style>
+        body,
+        html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            background-image: url("Stock Photos/road.jpg");
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-top" style="margin: auto;">
+        <div class="page-row page-padding page-black">
+            <div class="page-col s3">
+                <a href="#" class="page-button page-block page-black">HOME</a>
+            </div>
+            <div class="page-col s3">
+                <a href="#book" class="page-button page-block page-black">BOOK</a>
+            </div>
+            <div class="page-col s3">
+                <a href="#packages" class="page-button page-block page-black">PACKAGES</a>
+            </div>
+            <div class="page-col s3">
+                <a href="#contact" class="page-button page-block page-black">CONTACT US</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="bgimg page-display-container page-grayscale-min" id="home">
+        <div class="page-display-bottomleft page-center page-padding-large page-hide-small">
+            <span class="page-tag">Journey of a thousand miles begins with one step</span>
+        </div>
+        <div class="page-display-middle page-center">
+            <span class="page-text-white" style="font-size: 90px; font-family: 'Noto Serif Tamil', serif">பயணம்</span>
+        </div>
+        <div class="page-display-bottomright page-center page-padding-large">
+            <span class="page-text-white">Rohtang Pass, Himachal Pradesh</span>
+        </div>
+    </header>
+
+    <div class="page-sand page-grayscale page-large">
+        <div class="page-container" id="book">
+            <div class="page-content" style="max-width: 800px">
+                <br>
+                        <div class="page-bar page-black">
+                            <button class="page-bar-item page-button tablink" onclick="openLink(event, 'Flight');">
+                                <i class="fa fa-plane page-margin-right"></i>Flight
+                            </button>
+                            <button class="page-bar-item page-button tablink" onclick="openLink(event, 'Hotel');">
+                                <i class="fa fa-bed page-margin-right"></i>Hotel
+                            </button>
+                            <button class="page-bar-item page-button tablink" onclick="openLink(event, 'Car');">
+                                <i class="fa fa-car page-margin-right"></i>Rental
+                            </button>
+                        </div>
+
+                        <!-- Tabs -->
+                        <div id="Flight" class="page-container page-white page-padding-16 myLink">
+                            <h3>Travel the world with us</h3>
+                            <div class="page-row-padding" style="margin: 0 -16px">
+                                <div class="page-half">
+                                    <label>From</label>
+                                    <input class="page-input page-border" type="text" placeholder="Departing from" />
+                                </div>
+                                <div class="page-half">
+                                    <label>To</label>
+                                    <input class="page-input page-border" type="text" placeholder="Arriving at" />
+                                </div>
+                            </div>
+                            <p>
+                                <button class="page-button page-dark-grey">
+                                    Search and find dates
+                                </button>
+                            </p>
+                        </div>
+
+                        <div id="Hotel" class="page-container page-white page-padding-16 myLink">
+                            <h3>Find the best hotels</h3>
+                            <p>
+                                Book a hotel with us and get the best fares and promotions.
+                            </p>
+                            <p>We know hotels - we know comfort.</p>
+                            <p>
+                                <button class="page-button page-dark-grey">
+                                    Search Hotels
+                                </button>
+                            </p>
+                        </div>
+
+                        <div id="Car" class="page-container page-white page-padding-16 myLink">
+                            <h3>Best car rental in the world!</h3>
+                            <p>
+                                <span class="page-tag page-deep-orange">DISCOUNT!</span>
+                                Special offer if you book today: 25% off anywhere in the world
+                                with CarServiceRentalRUs
+                            </p>
+                            <input class="page-input page-border" type="text" placeholder="Pick-up point" />
+                            <p>
+                                <button class="page-button page-dark-grey">
+                                    Search Availability
+                                </button>
+                            </p>
+                        </div>
+            </div>
+        </div>
+        <div class="page-container" id="packages">
+            <div class="page-content" style="max-width: 1000px">
+                <div class="page-row-padding">
+                    <br><br>
+                    <div class="page-third page-container page-margin-bottom">
+                      <img src="Images/mountains.jpg" alt="Norway" style="width:100%" class="page-hover-opacity">
+                      <div class="page-container page-white">
+                        <p><b>Norway</b></p>
+                        <p>Explre the land of breathtaking mountains and experiance a proper nordic journey.</p>
+                        <button class="page-button page-black" type="submit">
+                            EXPLORE
+                        </button>
+                      </div>
+                    </div>
+                    <div class="page-third page-container page-margin-bottom">
+                      <img src="Images/lights.jpg" alt="Norway" style="width:100%" class="page-hover-opacity">
+                      <div class="page-container page-white">
+                        <p><b>Iceland</b></p>
+                        <p>From picturistic landscapes to geothermal pools, Enjoy the food, people and the mountains.</p>
+                        <button class="page-button page-black" type="submit">
+                            EXPLORE
+                        </button>
+                      </div>
+                    </div>
+                    <div class="page-third page-container">
+                      <img src="Images/nature.jpg" alt="Norway" style="width:100%" class="page-hover-opacity">
+                      <div class="page-container page-white">
+                        <p><b>Serbia</b></p>
+                        <p>Explore the serbian wilderness in an amazing journey</p>
+                        <button class="page-button page-black" type="submit">
+                            EXPLORE
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="page-row-padding">
+                    <div class="page-third page-container page-margin-bottom">
+                      <img src="Images/p1.jpg" alt="Norway" style="width:100%" class="page-hover-opacity">
+                      <div class="page-container page-white">
+                        <p><b>South America</b></p>
+                        <p>From Baja Mexico to the salty beaches of Chile.</p>
+                        <button class="page-button page-black" type="submit">
+                            EXPLORE
+                        </button>
+                      </div>
+                    </div>
+                    <div class="page-third page-container page-margin-bottom">
+                      <img src="Images/p2.jpg" alt="Norway" style="width:100%" class="page-hover-opacity">
+                      <div class="page-container page-white">
+                        <p><b>Factory Tours</b></p>
+                        <p>Explore world famous facilities and uncover how your favorite items are made.</p>
+                        <button class="page-button page-black" type="submit">
+                            EXPLORE
+                        </button>
+                      </div>
+                    </div>
+                    <div class="page-third page-container">
+                      <img src="Images/p3.jpg" alt="Norway" style="width:100%" class="page-hover-opacity">
+                      <div class="page-container page-white">
+                        <p><b>African Safari</b></p>
+                        <p>Explore the african savannah and its booming life with all its glory.</p>
+                        <button class="page-button page-black" type="submit">
+                            EXPLORE
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+
+        </div>
+        <div class="page-container" id="contact" style="padding-bottom: 32px">
+            <div class="page-content" style="max-width: 700px">
+                <p>
+                    <span class="page-tag">FYI!</span> We offer special-corporate services
+                    for any trips, long or short. We understand your needs and we will
+                    tailor your Journey to satisfy the biggest criteria of them all, your
+                    peace and satisfaction.
+                </p>
+                <form action="/action_page.php" target="_blank">
+                    <p>
+                        <input class="page-input page-padding-16 page-border" type="text" placeholder="Name" required
+                            name="Name" />
+                    </p>
+                    <p>
+                        <input class="page-input page-padding-16 page-border" type="text"
+                            placeholder="Company Name" required name="People" />
+                    </p>
+                    <p>
+                        <input class="page-input page-padding-16 page-border" type="datetime-local"
+                            placeholder="Date and time" required name="date" value="2020-11-16T20:00" />
+                    </p>
+                    <p>
+                        <input class="page-input page-padding-16 page-border" type="text"
+                            placeholder="Message \ Special requirements" required name="Message" />
+                    </p>
+                    <p>
+                        <button class="page-button page-black" type="submit">
+                            SEND MESSAGE
+                        </button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-center page-light-grey page-padding-48 page-large">
+        <p>Made for Net-Centric Programming Course By Sudharshan Balaji</p>
+    </footer>
+    <script src="HomePage-Script.js"></script>
+</body>
+
+</html>
